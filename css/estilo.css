@@ -4,13 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
 
+
+
 @font-face {
-    font-family: [vogue];
-    src: url([../fontes/vogue/Vogue.ttf]);
+    font-family: vogue;
+    src: url('../fontes/vogue/Vogue.ttf');
 }
 @font-face {
-    font-family: [caviar];
-    src: url([../fontes/caviar_dreams/CaviarDreams/ttf]);
+    font-family: caviar;
+    src: url('../fontes/caviar_dreams/CaviarDreams/ttf');
+}
+@font-face {
+    font-family: azonix;
+    src: url('../fontes/azonix/Azonix.otf');
 }
 
 * {
@@ -27,7 +33,7 @@ body {
     min-height: 100vh;
 }
 header {
-    background-color: #000000;
+    background-color: #000641;
     padding: 10px;
 }
 #h1, #h2 {
@@ -35,8 +41,7 @@ header {
 }
 header h1,h2 {
     text-transform: uppercase;
-    font-weight: lighter;
-    font-family: vogue;
+    font-family: 'azonix';    
     background-image: url('../imagens/prata.webp');
     background-position: center;
     background-clip: text;
@@ -45,6 +50,7 @@ header h1,h2 {
 }
 header h1 {
     font-size: 40px;
+    margin: 20px 50px;
 }
 .header {
     display: flex;
@@ -72,7 +78,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: #000641;
     margin-top: 0;
 }
 .menuprincipal {
@@ -101,7 +107,7 @@ header h1 {
 }
 .menu nav .menuprincipal a:hover {
     color: #ffbf00;
-    background-color: #272727a3;
+    background-color: #405277a3;
     border-radius: 10px;
     background-image: none;
     background-clip: border-box;
@@ -114,7 +120,7 @@ article {
     background-color: #00000092;
 }
 article h2 {
-    font-family: caviar;
+    font-family: azonix;
     border-bottom: 1px solid #3737378c;
     padding: 15px;
     background-image: linear-gradient(to right,#d68800, #daa520, #ffbf00, #ecb100);
@@ -124,16 +130,15 @@ article h2 {
     text-align: center;
 }
 .biografiahome {
-    background-color: #ababab;
+    background-color: #e0e0e0;
     padding: 15px;
     border-right: 20px solid #000000cf;
     border-radius: 0px 40px 40px 10px;
     display: flex;
+    flex-direction: column-reverse;
     margin-bottom: 40px;
 }
-.imgbio {
-    max-height: 125px;
-}
+
 .biografiatextohome {
     color: #000000;
     margin-bottom: 20px;
@@ -141,11 +146,12 @@ article h2 {
     letter-spacing: 1px;
 }
 .biografiahome img {
-    max-width: 200px;
-    border-radius: 30%;
+    max-width: 600px;
+    border-radius: 20px;
 }
 .bio {
     margin-bottom: 20px;
+    padding-top: 30px;
 }
 .biografia {
     display: flex;
@@ -206,7 +212,7 @@ article h2 {
 }
 
 .titulosection {
-    background-color: #000000d1;
+    background-color: #000322;
 }
 
 .melhoresfilmes {
@@ -220,7 +226,7 @@ article h2 {
     width: 100%;
     justify-content: center;
     padding: 15px 0px;
-    background-color: #000000d1;
+    background-color: #000211;
     border-bottom: 1px solid #3737378c;
 }
 .imgmelhores {
@@ -248,10 +254,11 @@ article h2 {
     max-width: 99%;
     min-height: 261px;
     padding: 15px;
-    background-color: #000000d1;
+    background-color: #000211;
     border-bottom: 1px solid #3737378c;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 .filmesinopsefilmografia .imgmelhores {
     margin: 0;
@@ -273,7 +280,7 @@ article h2 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: #000000d1;
+    background-color: #000211;
     justify-content: center;
 }
 .award {
@@ -307,7 +314,7 @@ article h2 {
     justify-content: center;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    background-color:#000000d1;
+    background-color:#000211;
 }
 article .mural .fotos img {
     height: 278px;
@@ -355,7 +362,7 @@ div.home {
     font-size: 14px;
 }
 footer {
-    background-color: #000000;
+    background-color:  #000641;
     position: relative;
     margin-bottom: 0;
     padding: 20px 0px;
@@ -436,6 +443,9 @@ footer {
     .imgbio {
         margin-bottom: 15px;
     }
+    .imgbio img {
+        max-width: 400px;
+    }
     .biografiatextohome {
         width: 100%;
     }
@@ -482,6 +492,9 @@ footer {
     }
     .biografiahome {
         flex-wrap: wrap;
+    }
+    .imgbio img {
+        max-width: 100%;
     }
     .biografiatextoleft, .biografiatextoright {
         text-align: start;
