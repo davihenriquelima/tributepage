@@ -1,0 +1,528 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+
+
+@font-face {
+    font-family: vogue;
+    src: url('../fontes/vogue/Vogue.ttf');
+}
+@font-face {
+    font-family: caviar;
+    src: url('../fontes/caviar_dreams/CaviarDreams/ttf');
+}
+@font-face {
+    font-family: azonix;
+    src: url('../fontes/azonix/Azonix.otf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('../imagens/denzel4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+header {
+    background-color: #000641;
+    padding: 10px;
+}
+#h1, #h2 {
+    padding: 5px;
+}
+header h1,h2 {
+    text-transform: uppercase;
+    font-family: 'azonix';    
+    background-image: url('../imagens/prata.webp');
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0.345);
+}
+header h1 {
+    font-size: 40px;
+    margin: 20px 50px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menumobile {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menuline {
+    width: 40px;
+    height: 21px;
+}
+.menuline img { 
+    width: 40px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000641;
+    margin-top: 0;
+}
+.menuprincipal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;  
+}
+.menu nav .menuprincipal ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu nav .menuprincipal li {
+    padding: 10px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu nav .menuprincipal a {
+    padding: 5px;
+    text-decoration: none;
+    background-image: url('../imagens/ourofundo.jpeg');
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.menu nav .menuprincipal a:hover {
+    color: #ffbf00;
+    background-color: #405277a3;
+    border-radius: 10px;
+    background-image: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+}
+article {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+    background-color: #00000092;
+}
+article h2 {
+    font-family: azonix;
+    border-bottom: 1px solid #3737378c;
+    padding: 15px;
+    background-image: linear-gradient(to right,#d68800, #daa520, #ffbf00, #ecb100);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+.biografiahome {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-right: 20px solid #000000cf;
+    border-radius: 0px 40px 40px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+}
+
+.biografiatextohome {
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+.biografiahome img {
+    max-width: 600px;
+    border-radius: 20px;
+}
+.bio {
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.biografia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.biografiatextoleft {
+    background-color: #fde1a4;
+    width: 42vw;
+    padding: 10px 40px;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    border-right:20px solid #daa520;
+    border-radius:0px 30px 30px 20px;
+}
+.biografiatextoright {
+    background-color: #b8b8b8;
+    width: 42vw;
+    padding: 10px 40px;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    border-left:20px solid #373737;
+    border-radius:30px 0px 20px 30px;
+    align-self: flex-end;
+    margin-right: 60px;
+}
+.referencia {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.referencia cite {
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 100%;
+}
+.referencia a {
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.filmes {
+    margin-bottom: 40px;
+}   
+.filmes a {
+    text-decoration: none;
+}
+
+.titulosection {
+    background-color: #000322;
+}
+
+.melhoresfilmes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.filmesinopse {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0px;
+    background-color: #000211;
+    border-bottom: 1px solid #3737378c;
+}
+.imgmelhores {
+    margin: 0px 20px;
+}
+.filmesinopse img {
+    max-width: 170px;
+    margin: 15px;
+}
+.sinopse {
+    color: #b8b8b8;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    margin: 15px;
+}
+.titulofilme {
+    display: flex;
+    color: #ababab;
+    width: 20%;
+    font-weight: bold;
+}
+.filmesinopsefilmografia {
+    display: flex;
+    max-width: 99%;
+    min-height: 261px;
+    padding: 15px;
+    background-color: #000211;
+    border-bottom: 1px solid #3737378c;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.filmesinopsefilmografia .imgmelhores {
+    margin: 0;
+}
+.filmesinopsefilmografia img {
+    width: 170px;
+    height: 230px;
+    object-fit: cover;
+    object-position: top center;
+}
+.sinopsefilmografia {
+    color: #b8b8b8;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: 40%;
+}
+.premios {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #000211;
+    justify-content: center;
+}
+.award {
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    width: 160px;
+}
+.awardlogo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.awardtitulo {
+    color: #b8b8b8;
+    font-weight: bold;
+    text-align: center;
+}
+.awardano {
+    color: #abababb6;
+    text-align: center;
+}
+.galeria a {
+    text-decoration: none;
+}
+.mural {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    background-color:#000211;
+}
+article .mural .fotos img {
+    height: 278px;
+    width: 202px;
+    border: 5px solid #a0a0a087;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+div.home {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.video {
+    margin: 20px 0px 20px 0px;
+    padding: 40px;
+    padding-bottom: 43%;
+    position: relative;
+}
+.video iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.cite {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+    min-height: 50px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.citation {
+    position: relative;
+    background-color: #000000d1;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 14px;
+}
+footer {
+    background-color:  #000641;
+    position: relative;
+    margin-bottom: 0;
+    padding: 20px 0px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.redes {
+    display: flex;
+    border-left: 1px solid #a9a9a979;
+    padding: 10px;
+    justify-content: center;
+}
+.redes div {
+    width: 45px;
+    height: 45px;
+}
+.redes img {
+    width: 35px;
+    margin: 5px; 
+}
+.copy {
+    font-family: 'Qwitcher Grypen', cursive;
+    color: #daa520;
+    font-size: 30px;
+    padding: 15px;
+    justify-content: center;
+}
+@media (max-width:1333px){
+   
+    article .fotos {
+        margin: 15px;
+    }
+}
+@media (min-width:705px) {
+    .menuprincipal {
+        display: flex !important;
+    }
+}
+@media (max-width:704px) {
+    .header h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+    .menu {
+        justify-content: center;
+        align-items: center;
+        transition-duration: 1s;
+    }
+    .menumobile {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+    }
+    .menuprincipal{
+        width: 95vw;
+        display: none;
+        position: relative;
+        left: 0%;
+        flex-direction: column;
+        background-color: #000000c8;
+    }
+    .menuprincipal ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .biografiahome {
+        flex-direction: column-reverse;
+    }
+    .imgbio {
+        margin-bottom: 15px;
+    }
+    .imgbio img {
+        max-width: 400px;
+    }
+    .biografiatextohome {
+        width: 100%;
+    }
+    .biografiatextoleft, .biografiatextoright {
+        text-align: start;
+        padding: 10px 20px;
+        margin: 0px 0px 20px 0px;
+        width:80%;
+    }
+    .filmesinopse {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .imgmelhores {
+        margin: 20px 0px;
+    }
+    .sinopse {
+        max-width: 93%;
+    }
+    .filmesinopsefilmografia {
+        flex-direction: column;
+        justify-content: left;
+    }
+    .titulofilme, .sinopsefilmografia, .imgmelhores {
+        width: 100%;
+    }
+    article .mural img {
+        max-width: 100%;
+        max-height: 100%
+    }
+    .fotos {
+        max-width: 100%;
+    }
+    .mural {
+        justify-content: center;
+    }
+}
+@media (max-width:480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+    .header h2 {
+        font-size: 15px;
+    }
+    .biografiahome {
+        flex-wrap: wrap;
+    }
+    .imgbio img {
+        max-width: 100%;
+    }
+    .biografiatextoleft, .biografiatextoright {
+        text-align: start;
+        padding: 10px 20px;
+        width: 75%;
+    }
+    
+    article {
+        margin: 0;
+    }
+    
+}
+@media (max-width:338px) {
+    .biografiahome img {
+        max-width: 90%;
+    }
+    .footer {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .redes {
+        width: 152px;
+        border-left:0px;
+        border-top: 1px solid #a9a9a979;
+    }
+    .filmes img {
+        max-width: 80%;
+    }
+}
+
