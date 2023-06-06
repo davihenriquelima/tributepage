@@ -1,6 +1,6 @@
 # tributepage
-Projeto feito por mim, em resposta a exercício no curso b7web
+Projeto individual e autoral
 
-homenagem feita ao ator Denzel Washington em vida.
+homenagem feita ao ator Denzel Washington (em vida)
 
 https://davihenriquelima.github.io/tributepage/
