@@ -113,13 +113,13 @@ header h1 {
     background-clip: border-box;
     -webkit-background-clip: border-box;
 }
-article {
+main {
     min-height: 100vh;
     margin: 0px;
     padding: 0px 20px 20px 20px;
     background-color: #00000092;
 }
-article h2 {
+main h2 {
     font-family: azonix;
     border-bottom: 1px solid #3737378c;
     padding: 15px;
@@ -316,7 +316,7 @@ article h2 {
     flex-wrap: wrap;
     background-color:#000211;
 }
-article .mural .fotos img {
+main .mural .fotos img {
     height: 278px;
     width: 202px;
     border: 5px solid #a0a0a087;
@@ -395,7 +395,7 @@ footer {
 }
 @media (max-width:1333px){
    
-    article .fotos {
+    main .fotos {
         margin: 15px;
     }
 }
@@ -472,7 +472,7 @@ footer {
     .titulofilme, .sinopsefilmografia, .imgmelhores {
         width: 100%;
     }
-    article .mural img {
+    main .mural img {
         max-width: 100%;
         max-height: 100%
     }
@@ -502,7 +502,7 @@ footer {
         width: 75%;
     }
     
-    article {
+    main {
         margin: 0;
     }
     
