@@ -1,6 +1,6 @@
 # tributepage
-Projeto individual e autoral
+Testes em estudo de HTML e CSS
 
-homenagem feita ao ator Denzel Washington (em vida)
+Homenagem feita ao ator Denzel Washington (em vida)
 
 https://davihenriquelima.github.io/tributepage/
